@@ -1,8 +1,9 @@
-import { stream } from "unified-stream";
-import { unified } from "unified";
+import process from "node:process";
+import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
+import { unified } from "unified";
+import { stream } from "unified-stream";
 
 const processor = unified().use(remarkParse).use(remarkRehype).use(rehypeStringify);
 
