@@ -1,11 +1,15 @@
-// import process from "node:process";
 import rehypeDocument from "rehype-document";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import remarkRetext from "remark-retext";
 import remarkSlug from "remark-slug";
 import remarkToc from "remark-toc";
+import retextEnglish from "retext-english";
+import retextIndefiniteArticle from "retext-indefinite-article";
 import { unified } from "unified";
+import { visit } from "unist-util-visit";
+// import process from "node:process";
 // import { stream } from "unified-stream";
 import { readSync, writeSync } from "to-vfile";
 import { reporter } from "vfile-reporter";
@@ -20,6 +24,7 @@ import { reporter } from "vfile-reporter";
 
 const processor = unified()
   .use(remarkParse)
+  .use(remarkRetext, unified().use(retextEnglish).use(retextIndefiniteArticle))
   .use(remarkSlug)
   .use(remarkToc)
   .use(remarkRehype)
@@ -36,3 +41,11 @@ processor.process(readSync("example.md")).then(
     throw error;
   }
 );
+
+export default function retextSentenceSpacing() {
+  return (tree, file) => {
+    visit(tree, "ParagraphNode", (node) => {
+      console.log(node);
+    });
+  };
+}

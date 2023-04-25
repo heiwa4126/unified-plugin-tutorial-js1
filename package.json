@@ -16,12 +16,17 @@
     "rehype-stringify": "^9.0.3",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
+    "remark-retext": "^5.0.1",
     "remark-slug": "^7.0.1",
     "remark-toc": "^8.0.1",
     "retext": "^8.1.0",
+    "retext-english": "^4.1.0",
+    "retext-indefinite-article": "^4.3.0",
     "to-vfile": "^7.2.4",
     "unified": "^10.1.2",
     "unified-stream": "^2.0.0",
+    "unist-util-is": "^5.2.1",
+    "unist-util-visit": "^4.1.2",
     "vfile-reporter": "^7.0.5"
   }
 }
