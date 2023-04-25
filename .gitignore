@@ -24,3 +24,6 @@ dist-br
 *.njsproj
 *.sln
 *.sw?
+
+#
+example.html

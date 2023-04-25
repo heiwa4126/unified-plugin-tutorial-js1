@@ -10,3 +10,16 @@ unifiedのremark/rehype pluginを作る練習。
 
 * [retext - npm](https://www.npmjs.com/package/retext)
 * [vfile-reporter - npm](https://www.npmjs.com/package/vfile-reporter)
+
+
+bashの
+```bash
+node index.js < example.md > example.html
+```
+
+はpowershellでは
+```powershell
+Get-Content example.md | node index.js | Out-File example.html
+# or
+GC example.md | node index.js > example.html
+```
