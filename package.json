@@ -1,0 +1,22 @@
+{
+  "name": "unified-plugin-tutorial-js1",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "heiwa4126",
+  "license": "ISC",
+  "dependencies": {
+    "rehype-stringify": "^9.0.3",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "retext": "^8.1.0",
+    "unified": "^10.1.2",
+    "unified-stream": "^2.0.0",
+    "vfile-reporter": "^7.0.5"
+  }
+}
