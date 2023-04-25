@@ -23,3 +23,6 @@ Get-Content example.md | node index.js | Out-File example.html
 # or
 GC example.md | node index.js > example.html
 ```
+
+↑めんどくさいので `node index.js < example.md` 相当は `pnpm start`で。
+(Windowsだと`cmd.exe`で実行される)

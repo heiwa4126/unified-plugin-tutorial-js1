@@ -22,6 +22,9 @@ dependencies:
   retext:
     specifier: ^8.1.0
     version: 8.1.0
+  to-vfile:
+    specifier: ^7.2.4
+    version: 7.2.4
   unified:
     specifier: ^10.1.2
     version: 10.1.2
@@ -635,6 +638,13 @@ packages:
   /supports-color@9.3.1:
     resolution: {integrity: sha512-knBY82pjmnIzK3NifMo3RxEIRD9E0kIzV4BKcyTZ9+9kWgLMxd4PrsTSMoFQUabgRBbF8KOLRDCyKgNV+iK44Q==}
     engines: {node: '>=12'}
+    dev: false
+
+  /to-vfile@7.2.4:
+    resolution: {integrity: sha512-2eQ+rJ2qGbyw3senPI0qjuM7aut8IYXK6AEoOWb+fJx/mQYzviTckm1wDjq91QYHAPBTYzmdJXxMFA6Mk14mdw==}
+    dependencies:
+      is-buffer: 2.0.5
+      vfile: 5.3.7
     dev: false
 
   /trim-lines@3.0.1:
