@@ -1,13 +1,29 @@
 # unified-plugin-tutorial-js1
 
-unifiedのremark/rehype pluginを作る練習。
-[Create a plugin \- unified](https://unifiedjs.com/learn/guide/create-a-plugin/)
-を見ながらretextのプラグインをつくってみる。
-(あとこれ
-[Use unified - unified](https://unifiedjs.com/learn/guide/using-unified/)
-)
+unifiedのremark/rehype pluginを作るチュートリアルをやってみた。
 
-[Learn - unified](https://unifiedjs.com/learn/)にづづく。
+まず
+[Create a plugin \- unified](https://unifiedjs.com/learn/guide/create-a-plugin/)
+を見ながら retext のプラグインをつくってみる。
+
+先にこれをやってから。
+[Use unified - unified](https://unifiedjs.com/learn/guide/using-unified/)
+
+[Learn - unified](https://unifiedjs.com/learn/) にづづく。
+
+
+## 実行
+
+[Use unified - unified](https://unifiedjs.com/learn/guide/using-unified/)の方は:
+```bash
+node index.js
+```
+
+[Create a plugin \- unified](https://unifiedjs.com/learn/guide/create-a-plugin/)の方は:
+```bash
+node example.js
+```
+(プラグインは`index.js`から`pligin1.js`に移した)
 
 
 ## メモ
@@ -26,3 +42,5 @@ GC example.md | node index.js > example.html
 
 ↑めんどくさいので `node index.js < example.md` 相当は `pnpm start`で。
 (Windowsだと`cmd.exe`で実行される)
+
+VFileでやるのが賢い感じ。
