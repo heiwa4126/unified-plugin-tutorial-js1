@@ -38,7 +38,7 @@ bashの
 node index.js < example.md > example.html
 ```
 
-はpowershellでは
+はPowershellでは
 ```powershell
 Get-Content example.md | node index.js | Out-File example.html
 # or
@@ -49,3 +49,6 @@ GC example.md | node index.js > example.html
 (Windowsだと`cmd.exe`で実行される)
 
 VFileでやるのが賢い感じ。
+
+Unifiedの既存のフィルタ、ほぼESMみたい。
+たまにtypesが変なやつがあってTypeScriptだとちょっと辛い。
