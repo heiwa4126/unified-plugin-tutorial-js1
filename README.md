@@ -14,6 +14,11 @@ unifiedのremark/rehype pluginを作るチュートリアルをやってみた�
 
 ## 実行
 
+```bash
+pnpm i
+```
+したのち
+
 [Use unified - unified](https://unifiedjs.com/learn/guide/using-unified/)の方は:
 ```bash
 node index.js
